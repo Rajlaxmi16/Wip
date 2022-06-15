@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index-style.css">
+    
+    <script src="./admin-script.js"></script>
+
+    <title>Sign-In Page</title>
+
+</head>
+<body>
+       <!-------------------------------------- NAVIGATION BAR  ----------------------------------------------------->
+   <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" style="color: crimson; " href="#">Kitchen Story</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link1 active" href="./index.html" onMouseOver="this.style.color='grey'">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link1" href="./index.html#trend" onMouseOver="this.style.color='grey'">Trending</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link1" href="./index.html#store" onMouseOver="this.style.color='grey'">Store</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link1" href="./index.html#organic" onMouseOver="this.style.color='grey'">Organic</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link1" href="./index.html#contact" onMouseOver="this.style.color='grey'">Contact Us</a>
+          </li>
+        
+            <li class="nav-item">
+              <a class="nav-link1" href="signin.html" onMouseOver="this.style.color='grey' ">Sign-In</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!------------------------------------------- HOME PAGE ---------------------------------------------------------->
+<section class="main2" id="home">
+    <div class="container py-5">
+      <br>
+      <div class="row py-4">
+       </div>
+       <div class="container" style="background-color- red; background-image: url(./img/back2.png); border: 5px solid saddlebrown; font-weight: bolder; font-size: large; width:40%; height:70vh;" >
+        <br><br>
+        <img src="./img/avatar.jpg" style="height: 25vh; padding-left: 130px; padding-right: 30px;"><br><br>
+        
+        <table>
+        <form onsubmit="event.preventDefault();onLogin();" autocomplete="off" method="post" style="justify-content: center; padding-left: 30px; padding-right: 30px;">
+            <div class="row">
+                  <input type="text" id="username" class="form-control" placeholder="Username" style="margin-left: 62px; height: 7vh; width: 32rem; font-size: 14px; font-weight: bold; border: 3px solid rgb(19, 139, 129);">
+                </div>
+              <br>
+              <div class="form-group">
+                <!-- <label for="exampleFormControlInput1">Emai</label> -->
+                <input type="password" id="pass" class="form-control" id="exampleFormControlInput1" placeholder="Password" style="margin-left: 52px; height: 7vh; width: 32rem; font-size: 14px; font-weight: bold; border: 3px solid rgb(19, 139, 129);">
+              </div><br>
+
+              <!-------------------------------------SUBMIT BUTTON-------------------------------------------------->
+          <div class="col-md-12 text-center">
+            <input type="submit" value="Login" id="Login" style="width: 150px; height: 50px; border-radius: 12px; font-style: bold ; color: white; background-color: green; border:4px solid black; padding-left: auto"; />
+          </div>
+            <br>
+              </form>
+              </div>
+    </div>    
+    </div>
+  </section>
+  
+</body>
+</html>

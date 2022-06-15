@@ -1,0 +1,155 @@
+body > table{
+    width: 100%;
+}
+
+/* ---------------------------------------- NAVIGATION BAR ------------------------------------------------- */
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3)
+}
+
+.main-nav li {
+    padding: 0 2%;
+}
+
+.nav a:hover {
+    background-color: gray;
+}
+
+/* ---------------------------------------- HEADER SECTION ------------------------------------------------- */
+.main-header {
+    background-color: rgba(0, 0, 0, .6);
+    background-image: url("Images/Header Background.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+/* ---------------------------------------- BAND SECTION ------------------------------------------------- */
+.band-name {
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: "Booter - Zero Zero";
+    font-weight: normal;
+    color: white;
+}
+
+.band-name-large {
+    font-size: 8em;
+}
+
+/* ---------------------------------------- TABLE SECTION ------------------------------------------------- */
+table{
+    border-collapse: collapse;
+}
+
+table.list{
+    width:100%;
+}
+
+td, th {
+    border: 2px solid rgb(125, 197, 225);
+    
+    text-align: left;
+    padding: 8px;
+    font-size: medium;
+}
+
+tr:nth-child(even),table.list thead>tr {
+    background-color: rgb(194, 134, 107);
+    /* #dddddd; */
+}
+
+/* ---------------------------------------- FORM SECTION ------------------------------------------------- */
+form{
+    font-weight: bolder;
+    color: rgb(107, 47, 7);;
+}
+
+input[type=text], input[type=number], input[type=password], select, option {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+input[type=submit]{
+    width: 30%;
+    background-color: #ddd;
+    color: #000;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form div.form-action-buttons{
+    text-align: right;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0000ee;
+    margin-right: 4px;
+}
+
+label.validation-error{
+    color:   red;
+    margin-left: 5px;
+}
+
+.hide{
+    display:none;
+}
+
+/* ---------------------------------------- CHANGE PASSWORD ------------------------------------------------- */
+.password h1{
+    font-weight: 1000;
+    text-align: center;
+    color: rgb(117, 67, 31);
+    border-radius: 15px;
+    font-weight: bolder;
+    font-size: 32px;
+    font-family: cursive;
+}
+
+.password hr{
+    border: 2px solid rgb(107, 47, 7);
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/* ---------------------------------------- FOOTER ------------------------------------------------- */
+.footer{
+    background-color: aquamarine;
+    color: black;
+    font-weight: bolder;
+    bottom: 0;
+    width: 100%; 
+    height: 50px; 
+    text-align: center;
+}

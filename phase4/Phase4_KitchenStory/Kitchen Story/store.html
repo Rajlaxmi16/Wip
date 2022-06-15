@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Store Collection</title>
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="store-style.css" />
+        <script src="store.js" async></script>
+    </head>
+
+    <body>
+<!------------------------------------------------------ HEADER-NAVIGATION BAR ---------------------------------------------------------->
+        <header class="main-header" style="background-color: rgb(235, 131, 34);">
+            <nav class="main-nav nav" style="font-weight: bolder; font-size: 20px;">
+                <ul>
+                    <a class="navbar-brand" style="color: white; font-weight: bolder; font-size: 40px; font-family: cursive;" href="#">Kitchen Story</a>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="store.html">STORE</a></li>
+                    <li><a href="#cart">CART &nbsp;<span class="glyphicon glyphicon-shopping-cart" style="color: white;"></span></a></li>
+                    <li><a href="signin.html">SIGN-IN</a></li>
+                </ul>
+            </nav><br>
+            <h1 class="band-name" style="font-size: 50px;">IN-STORE COLLECTION</h1>
+        </header>
+
+<!------------------------------------------------------ SEARCH BAR ---------------------------------------------------------->
+        <br><br>
+        <i class="fas fa-search"></i>
+    <input type="text" class="searchBar" id="myInput" placeholder=" Search by Product Name" onkeyup="searchFun()"
+    style="border: 3px solid black; border-radius: 12px; font-weight: bolder; width: 60%; height:8vh; align-items: center; margin-left: 250px;">
+    <br><br>
+
+<!------------------------------------------------------ STORE ITEMS ---------------------------------------------------------->
+
+        <section class="container content-section">
+            <br>
+            <div class="shop-items" id="shop-items">
+                <div class="shop-item" id="shop-item"><br><br>
+                    <span class="shop-item-title">Muesli Fruit Magic</span>
+                    <img class="shop-item-image" src="./img/prod1.webp">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs.355</span>
+                        <button 
+                        class="btn btn-primary shop-item-button" type="button" style="background-color: seagreen;">
+                        ADD TO CART&nbsp;&nbsp;<span class="glyphicon glyphicon-shopping-cart" style="color: white;"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="shop-item" id="shop-item"><br><br>
+                    <span class="shop-item-title">Fresh Fruit Basket</span>
+                    <img class="shop-item-image" src="./img/prod2.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs.1200</span>
+                        <button 
+                        class="btn btn-primary shop-item-button" type="button" style="background-color: seagreen;">
+                        ADD TO CART&nbsp;&nbsp;<span class="glyphicon glyphicon-shopping-cart" style="color: white;"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="shop-item"><br><br> 
+                    <span class="shop-item-title">Fresh Kiwi</span>
+                    <img class="shop-item-image" src="./img/prod3.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs.119</span>
+                        <button 
+                        class="btn btn-primary shop-item-button" type="button" style="background-color: seagreen;">
+                        ADD TO CART&nbsp;&nbsp;<span class="glyphicon glyphicon-shopping-cart" style="color: white;"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="shop-item"><br><br>
+                    <span class="shop-item-title">MTR Puliyogare Masala</span>
+                    <img class="shop-item-image" src="./img/prod4.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs.85</span>
+                        <button 
+                        class="btn btn-primary shop-item-button" type="button" style="background-color: seagreen;">
+                        ADD TO CART&nbsp;&nbsp;<span class="glyphicon glyphicon-shopping-cart" style="color: white;"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="shop-item"><br><br>
+                    <span class="shop-item-title">Monthly Masala Pack</span>
+                    <img class="shop-item-image" src="./img/trend1.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">RS.500</span>
+                        <button 
+                        class="btn btn-primary shop-item-button" type="button" style="background-color: seagreen;">
+                        ADD TO CART&nbsp;&nbsp;<span class="glyphicon glyphicon-shopping-cart" style="color: white;"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="shop-item"><br><br>
+                    <span class="shop-item-title">Storage Glass Jars</span>
+                    <img class="shop-item-image" src="./img/trend2.1.jpeg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs.850</span>
+                        <button 
+                        class="btn btn-primary shop-item-button" type="button" style="background-color: seagreen;">
+                        ADD TO CART&nbsp;&nbsp;<span class="glyphicon glyphicon-shopping-cart" style="color: white;"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="shop-item"><br><br>
+                    <span class="shop-item-title">Honey Dispenser</span>
+                    <img class="shop-item-image" src="./img/trend3.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs.645</span>
+                        <button 
+                        class="btn btn-primary shop-item-button" type="button" style="background-color: seagreen;">
+                        ADD TO CART&nbsp;&nbsp;<span class="glyphicon glyphicon-shopping-cart" style="color: white;"></span>
+                        </button>
+                    </div>
+                </div>
+
+                
+                <div class="shop-item"><br><br>
+                    <span class="shop-item-title">Rotatory Storage</span>
+                    <img class="shop-item-image" src="./img/trend4.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs.740</span>
+                        <button 
+                        class="btn btn-primary shop-item-button" type="button" style="background-color: seagreen;">
+                        ADD TO CART&nbsp;&nbsp;<span class="glyphicon glyphicon-shopping-cart" style="color: white;"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="shop-item"><br><br>
+                    <span class="shop-item-title">Bread Flour</span>
+                    <img class="shop-item-image" src="./img/prod4.webp">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs.490</span>
+                        <button 
+                        class="btn btn-primary shop-item-button" type="button" style="background-color: rgb(235, 131, 34);">
+                        ADD TO CART&nbsp;&nbsp;<span class="glyphicon glyphicon-shopping-cart" style="color: white;"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section><br><br>
+
+<!------------------------------------------------------ CART SECTION ---------------------------------------------------------->
+        <section class="container content-section" id="cart">
+            <h1 style="text-align: center; font-weight: bolder; font-size: 35px; color: rgb(107, 47, 7);">CART</h1>
+            <hr style="border: 2px solid rgb(107, 47, 7);">
+            <!-- <h2 class="section-header">CART</h2> -->
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">Rs.0/-</span>
+            </div>
+            <form action="payment.html">
+                 <button class="btn btn-primary btn-purchase" type="submit" style="background-color: rgb(235, 131, 34);">PURCHASE</button>
+            </form>
+        </section>
+       
+<!------------------------------------------- FOOTER SECTION ---------------------------------------------------------->
+        <footer class="footer"><br>
+            <p>Copyright @kitchenStory 2022</p>
+        </footer>
+    </body>
+</html>

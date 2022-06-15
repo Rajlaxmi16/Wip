@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!------------------------------------- Bootstrap CSS ---------------------------------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <!------------------------------------- CSS & SCRIPT ---------------------------------------------------------->
+    <link rel="stylesheet" href="index-style.css">
+    <script src="store.js" async></script>
+
+    <title>Home Page</title>
+
+</head>
+<body style="margin-bottom: 0;">
+
+     <!-------------------------------------- NAVIGATION BAR  ----------------------------------------------------->
+   <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" style="color: crimson;" href="#">Kitchen Story</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home" style="text-decoration:none;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#trend" style="text-decoration:none;">Trending</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#store" style="text-decoration:none;">Store</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#organic" style="text-decoration:none;">Organic</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" style="text-decoration:none;">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="px-2" search type="search" placeholder="Search" aria-label="Search">
+          <button class="btn0" type="submit">Search</button>
+        </form>
+        <ul class="navbar-nav me-auto my-2 my-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="signin.html">Sign-In</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!------------------------------------------- HOME PAGE ---------------------------------------------------------->
+<section class="main" id="home">
+    <div class="container py-5">
+    </div>
+  </section>
+  <br><br>
+  
+  <!------------------------------------------- CATEGORY SECTION ---------------------------------------------------------->
+  <section class="category" id="category">
+      <br>
+      <div class="conatiner">
+        <h1>Shop by Category</h1>
+        <hr>
+      </div>
+      <br><br>
+      <div class="row">
+        <div class="col-md-3">
+            <img src="./img/grocery.png" id="picture1" class="img-responsive" style="height: 26vh; width: 20rem;"/>
+            <p>Grocery</p>
+        </div>
+        <div class="col-md-3">
+            <img src="./img/snack.png" id="picture2" class="img-responsive" style="height: 26vh; width: 20rem;"/>
+            <p>Snacks</p>
+        </div>
+        <div class="col-md-3">
+            <img src="./img/utensils.png" id="picture3" class="img-responsive " style="height: 26vh; width: 20rem;"/>
+            <p>Utensils</p>
+            <br><br>
+        </div>
+        
+  </section>
+  <br><br>
+
+  <!------------------------------------------- TREND SECTION ---------------------------------------------------------->
+  <section class="trend" id="trend">
+      <br>
+    <div class="conatiner">
+        <h1>What's Trending</h1>
+        <hr>
+      </div>
+      <br><br>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="card" style="width: 26rem; align-items: center;"><br>
+            <img src="./img/trend1.png" class="card-img-top" alt="...">
+            <div class="card-body"><hr>
+                <h5 class="card-title">Monthly Pack</h5>
+                <p class="card-text">Rs. 525</p>
+                <a href="#" class="btn btn-success" value="Submit Button">Add to Cart &nbsp;&nbsp;<span class="glyphicon glyphicon-shopping-cart"></span></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-3">
+          <div class="card" style="width: 26rem; align-items: center;"><br>
+            <img src="./img/trend2.1.jpeg" class="card-img-top" alt="...">
+            <div class="card-body"><hr>
+              <h5 class="card-title">Storage Glass Jar</h5>
+              <p class="card-text">Rs.320</p>
+              <a href="#" class="btn btn-success" value="Submit Button">Add to Cart &nbsp;&nbsp;<span class="glyphicon glyphicon-shopping-cart"></span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="card" style="width: 26rem; align-items: center;"><br>
+              <img src="./img/trend3.jpg" class="card-img-top" alt="...">
+              <div class="card-body"><hr>
+                <h5 class="card-title">Honey Dispenser</h5>
+                <p class="card-text">Rs.320</p>
+                <a href="#" class="btn btn-success" value="Submit Button">Add to Cart &nbsp;&nbsp;<span class="glyphicon glyphicon-shopping-cart"></span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="card" style="width: 24rem; align-items: center;"><br>
+              <img src="./img/trend4.jpg" class="card-img-top" style="width: 22rem;">
+              <div class="card-body"><hr>
+                <h5 class="card-title">Rotatory Storage</h5>
+                <p class="card-text">Rs.320</p>
+                <a href="#" class="btn btn-success" value="Submit Button">Add to Cart &nbsp;&nbsp;<span class="glyphicon glyphicon-shopping-cart"></span></a>
+              </div>
+            </div><br><br>
+          </div>
+      </div>    
+  </section><br>
+
+  <!------------------------------------------- STORE SECTION ---------------------------------------------------------->
+  <section class="trend" id="store">
+      <br>
+    <div class="conatiner">
+        <h1>Explore Our Store</h1>
+        <hr>
+      </div>
+      <br><br>
+
+      <div class="row shop-items">
+        <div class="col-sm-3 shop-item">
+          <div class="card" style="width: 26rem; align-items: center;"><br>
+            <img src="./img/trend1.png" class="card-img-top shop-item-image" alt="...">
+            <div class="card-body"><hr>
+                <h5 class="card-title shop-item-title">Monthly Pack</h5>
+                <p class="card-text shop-item-price">Rs. 525</p>
+                <button class="btn btn-success btn-purchase" type="button">Add to Cart &nbsp;&nbsp;<span class="glyphicon glyphicon-shopping-cart"></span></button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-3 shop-item">
+            <div class="card" style="width: 26rem; align-items: center;"><br>
+              <img src="./img/prod1.webp" class="card-img-top" style="width: 22rem;">
+              <div class="card-body"><hr>
+                <h5 class="card-title">Muesli Fuit Magic</h5>
+                <p class="card-text">Rs.320</p>
+                <button class="btn btn-success btn-purchase" type="button">Add to Cart &nbsp;&nbsp;<span class="glyphicon glyphicon-shopping-cart"></span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="card" style="width: 26rem; align-items: center;"><br>
+              <img src="./img/prod2.jpg" class="card-img-top" style="width: 22rem;">
+              <div class="card-body"><hr>
+                <h5 class="card-title">Fresh Fruit Basket</h5>
+                <p class="card-text">Rs.320</p>
+                <a href="#" class="btn btn-success btn-purchase" value="Submit Button">Add to Cart &nbsp;&nbsp;<span class="glyphicon glyphicon-shopping-cart"></span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="card" style="width: 24rem; align-items: center;"><br>
+              <img src="./img/prod3.jpg" class="card-img-top" style="width: 22rem;">
+              <div class="card-body"><hr>
+                <h5 class="card-title">Fresh Dragon Fruit</h5>
+                <p class="card-text">Rs.119</p>
+                <a href="#" class="btn btn-success btn-purchase" value="Submit Button">Add to Cart &nbsp;&nbsp;<span class="glyphicon glyphicon-shopping-cart"></span></a>
+              </div>
+            </div><br><br>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="card" style="width: 26rem; align-items: center;"><br>
+              <img src="./img/prod4.jpg" class="card-img-top" style="width: 22rem;">
+              <div class="card-body"><hr>
+                <h5 class="card-title">Puliyogare Powder</h5>
+                <p class="card-text">Rs.320</p>
+                <a href="#" class="btn btn-success btn-purchase" value="Submit Button">Add to Cart &nbsp;&nbsp;<span class="glyphicon glyphicon-shopping-cart"></span></a>
+              </div>
+            </div>
+          </div>
+
+        <div class="col-sm-3">
+          <div class="card" style="width: 26rem; align-items: center;"><br>
+            <img src="./img/trend2.1.jpeg" class="card-img-top" alt="...">
+            <div class="card-body"><hr>
+              <h5 class="card-title">Storage Glass Jar</h5>
+              <p class="card-text">Rs.320</p>
+              <a href="#" class="btn btn-success btn-purchase" value="Submit Button">Add to Cart &nbsp;&nbsp;<span class="glyphicon glyphicon-shopping-cart"></span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="card" style="width: 26rem; align-items: center;"><br>
+              <img src="./img/trend3.jpg" class="card-img-top" alt="...">
+              <div class="card-body"><hr>
+                <h5 class="card-title">Honey Dispenser</h5>
+                <p class="card-text">Rs.320</p>
+                <a href="#" class="btn btn-success btn-purchase" value="Submit Button">Add to Cart &nbsp;&nbsp;<span class="glyphicon glyphicon-shopping-cart"></span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="card" style="width: 24rem; align-items: center;"><br>
+              <img src="./img/trend4.jpg" class="card-img-top" style="width: 22rem;">
+              <div class="card-body"><hr>
+                <h5 class="card-title">Rotatory Storage</h5>
+                <p class="card-text">Rs.320</p>
+                <a href="#" class="btn btn-success btn-purchase" value="Submit Button">Add to Cart &nbsp;&nbsp;<span class="glyphicon glyphicon-shopping-cart"></span></a>
+              </div>
+            </div>
+          </div>
+      </div>    
+      <br>
+      <form action="store.html">
+        <button class="btn1 mt-3" type="submit" style="margin-left:550px; width:160px; height: 60px; font-size: 18px;">Explore More &nbsp;<span class="glyphicon glyphicon-chevron-right"></span</button>
+      </form>
+  </section>
+  <br><br>
+
+  <!------------------------------------------- ORGANIC SECTION ---------------------------------------------------------->
+  <section class="trend" id="organic">
+    <br>
+  <div class="conatiner">
+      <h1>Organic Store</h1>
+      <hr>
+    </div>
+    <br><br>
+
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="card" style="width: 26rem; align-items: center;"><br>
+          <img src="./img/org1.png" class="card-img-top" alt="...">
+          <div class="card-body"><hr>
+              <h5 class="card-title">Peanut Butter</h5>
+              <p class="card-text">Rs. 525</p>
+              <a href="#" class="btn btn-success" value="Submit Button">Add to Cart &nbsp;&nbsp;<span class="glyphicon glyphicon-shopping-cart"></span></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-3">
+        <div class="card" style="width: 26rem; align-items: center;"><br>
+          <img src="./img/org2.png" class="card-img-top" alt="...">
+          <div class="card-body"><hr>
+            <h5 class="card-title">Healthy Tea</h5>
+            <p class="card-text">Rs.320</p>
+            <a href="#" class="btn btn-success" value="Submit Button">Add to Cart &nbsp;&nbsp;<span class="glyphicon glyphicon-shopping-cart"></span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+          <div class="card" style="width: 26rem; align-items: center;"><br>
+            <img src="./img/org3.jfif" class="card-img-top" alt="...">
+            <div class="card-body"><hr>
+              <h5 class="card-title">Dark Chocolate</h5>
+              <p class="card-text">Rs.320</p>
+              <a href="#" class="btn btn-success" value="Submit Button">Add to Cart &nbsp;&nbsp;<span class="glyphicon glyphicon-shopping-cart"></span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card" style="width: 24rem; align-items: center;"><br>
+            <img src="./img/org4.jpg" class="card-img-top" style="width: 22rem;">
+            <div class="card-body"><hr>
+              <h5 class="card-title">Rotatory Storage</h5>
+              <p class="card-text">Rs.320</p>
+              <a href="#" class="btn btn-success" value="Submit Button">Add to Cart &nbsp;&nbsp;<span class="glyphicon glyphicon-shopping-cart"></span></a>
+            </div>
+          </div><br><br>
+        </div>
+    </div>    
+</section><br>
+
+<!------------------------------------------- CONTACT US SECTION ---------------------------------------------------------->
+<section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 style="color:black; text-align: center;"><b>Contact Us</b></h1>
+          <!-- <h6 style="color: sienna; text-align: center;"><b>Eat Healthy Stay Healthy</b></h6> -->
+          <hr style="border: 2px solid black;">
+  
+    <div class="container" style="background-color: white; font-weight: bolder; font-size: large; height:430px; padding-left: 20px; padding-right: 20px;" >
+      <br><br>
+  
+  <!------------------------------------- LOCATION ------------------------------------------------------->
+  <div class="row" style="width: 40%; text-align: center; float: left; padding-left: 20px;">
+    <img src="./img/map.jpg" class="card-img-top" alt="something" style="border: 2px solid rgb(31, 197, 189); height: 310px;">
+    </div>   
+  
+    <div class="row" style="width: 60%; text-align: justify; float: right; color: black;">
+      <div class="col" style="font-weight: bolder; font-size: larger;">
+       <span class="glyphicon glyphicon-map-marker"> <b>LOCATION:</b> Mumbai, Maharashtra, India</span>
+      </div>
+  </div> <br><br>
+  
+  <!------------------------------------- MAIL ------------------------------------------------------->
+  <div class="row" style="width: 60%; text-align: justify; float: right; color: black">
+  <div class="col" style="font-weight: bolder; font-size: larger;">
+   <span class="glyphicon glyphicon-envelope"> <b>MAIL:</b> kitchenstory@gmail.com</span>
+  </div>
+  </div>
+  <br><br>
+  
+  <!------------------------------------- CONTACT ------------------------------------------------------->
+    <div class="row" style="width: 60%; text-align: justify; float: right; color: black">
+           <div class="col" style="font-weight: bolder; font-size: larger;">
+            <span class="glyphicon glyphicon-phone"> <b>CONTACT:</b> 987654321 </span>
+           </div>
+    </div>
+         <br><br>
+  
+  <!------------------------------------- FEEDBACK ------------------------------------------------------->
+   <div class="row" style="width: 60%; text-align: justify; float: right; color: black">
+    <div class="col" style="font-weight: bolder; font-size: larger;">
+      <div class="form-group" style="font-size: 18px;">
+        <label for="profileTextarea1">Feedback</label>
+        <textarea class="form-control" id="profileTextarea1" rows="5" style="font-size: 16px;"></textarea>
+  
+        <button class="btn1 mt-3" type="submit" style="margin-left:250px; width:160px; height: 60px; font-size: 14px;">Submit</button>
+      </div>
+    </div>
+  </div>
+  </section>
+  <br><br>
+  
+  <!------------------------------------------- FOOTER SECTION ---------------------------------------------------------->
+  <footer class="footer"><br>
+    <p>Copyright @kitchenStory 2022</p>
+  </footer>
+</body>
+</html>

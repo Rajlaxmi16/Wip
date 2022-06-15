@@ -1,0 +1,306 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ---------------------------------------- NAVBAR ------------------------------------------------- */
+.navbar-brand{
+    font-size: 3rem;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-brand:hover{
+    color: grey;
+}
+
+a:link{
+    text-decoration: none!important;
+  }
+  
+.nav-link{
+    margin-right: 5px;
+    margin-left: 5px;
+    color: black;
+    font-family: monospace;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.nav-link1{
+    margin-right: 35px;
+    padding-left: 25px;
+    margin-left: 5px;
+    color: black;
+    font-family: monospace;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: gray;
+}
+
+.search{
+    height: 40px;
+    width: 100%;
+    border-radius: 60px;
+    outline: none;
+    margin-right: 35px;
+    border: 2px solid rgb(248, 26, 92);
+}
+
+/* ---------------------------------------- MAIN ------------------------------------------------- */
+.main{
+    background: url(./img/back1.png) repeat;
+    
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 90vh;
+    width: 100%;
+}
+
+.main2{
+    background: url(./img/back.webp) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 90vh;
+    width: 100%;
+}
+
+/* ---------------------------------------- FOOTER ------------------------------------------------- */
+.footer{
+    background-color:rgb(184, 250, 250);
+    color: black;
+    font-weight: bolder;
+    bottom: 0;
+    width: 100%; 
+    height: 50px; 
+}
+
+/* ---------------------------------------- CATEGORY ------------------------------------------------- */
+.category{
+    margin-left: 70px;
+    margin-right: 70px; 
+    align-items: center;
+    background-color: aquamarine;
+}
+.category img{
+    align-items: center;
+    margin-left: 170px;
+    margin-right: 550px;
+}
+
+.category h1{
+    font-weight: 1000;
+    text-align: center;
+    color: black;
+    border-radius: 15px;
+    font-weight: bolder;
+    font-size: 32px;
+    font-family: cursive;
+}
+
+.category hr{
+    border: 2px solid black;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.category p{
+    font-size: 26px;
+    font-weight: bolder;
+    text-align: center;
+    margin-left: 230px;
+    color: black;
+}
+
+/* ---------------------------------------- TREND ------------------------------------------------- */
+.trend{
+    margin-left: 70px;
+    margin-right: 70px; 
+    align-items: center;
+    background-color: aquamarine;
+}
+
+.trend h1{
+    font-weight: 1000;
+    text-align: center;
+    color: black;
+    
+    border-radius: 15px;
+    font-weight: bolder;
+    font-size: 32px;
+    font-family: cursive;
+}
+
+.trend hr{
+    border: 2px solid black;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.trend h5, p{
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.trend img{
+    height: 25vh;
+    width: 25rem;
+}
+
+.card{
+    margin-left: 25px;
+    margin-right: 30px;
+}
+
+/* ---------------------------------------- LOGIN ------------------------------------------------- */
+.login{
+    background-color: seashell;
+}
+
+/* ---------------------------------------- CART ------------------------------------------------- */
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+
+/* ---------------------------------------- BUTTONS ------------------------------------------------- */
+.btn{
+    align-items: center;
+    width: 15rem;
+    height: 5vh;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.btn0{
+    height: 40px;
+    width: 100px;
+    outline: none;
+    border: none;
+    background: rgb(20, 165, 20);
+    color: white;
+    border-radius: 60px;
+    font-weight: 700;
+}
+
+.btn1{
+    height: 30vh;
+    width: 16%;
+    outline: none;
+    border: none;
+    background-color: rgb(23, 136, 23);
+    border: 3px solid rgb(33, 185, 96);
+    color: white;
+    font-weight: 1050;
+    border-radius: 60px;
+    align-items: center;
+    /* margin-left: 460px; */
+    /* transform: rotate(-5deg); */
+    font-weight: bolder;
+}
