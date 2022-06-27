@@ -1,0 +1,367 @@
+{
+    "id": 1,
+    "name": "JavaScript Quiz",
+    "description": "JavaScript Quiz (based on basic concepts)",
+    "questions": [
+        {
+            "id": 1010,
+            "name": "Which is not valid data type in Javascript.",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 1055,
+                    "questionId": 1010,
+                    "name": "Undefinded",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 1010,
+                    "name": "Boolean",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 1010,
+                    "name": "float",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 1010,
+                    "name": "Number",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1011,
+            "name": "By which javascript code is used ?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 1055,
+                    "questionId": 1010,
+                    "name": "Class.",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 3030,
+                    "name": "Methods/Functions.",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 3030,
+                    "name": "Event.",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 3030,
+                    "name": "None of the above.",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 3012,
+            "name": "  Among the given statements, which statement defines closures in JavaScript??",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 1055,
+                    "questionId": 3030,
+                    "name": "It’s a function that is enclosed with references to its inner function scope",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 3030,
+                    "name": "It’s a function that is enclosed with references to its lexical environment",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1056,
+                    "questionId": 3030,
+                    "name": "It’s a function that is enclosed with the object to its inner function scope",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 3030,
+                    "name": "None of the above",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 3013,
+            "name": "Will the following JavaScript code work? var tensquared = (function(x) {return x*x;}(10));",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 1055,
+                    "questionId": 3030,
+                    "name": "Exception will be thrown.",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 3030,
+                    "name": "Memory leak.",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 3030,
+                    "name": "Error.",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 3030,
+                    "name": "Yes, perfectly.",
+                    "isAnswer": true
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 3014,
+            "name": "Which of the following is correct about callbacks?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 1055,
+                    "questionId": 3030,
+                    "name": "A callback is a plain JavaScript function passed to some method as an argument or option",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 3030,
+                    "name": "Some callbacks are just events, called to give the user a chance to react when a certain state is triggered.",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 3030,
+                    "name": "Both",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 3030,
+                    "name": "None of above",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 3015,
+            "name": "Which of the following code creates an object?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 1055,
+                    "questionId": 3030,
+                    "name": "var book = Object();",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 3030,
+                    "name": "var book = new Object();",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1056,
+                    "questionId": 3030,
+                    "name": "var book = new OBJECT();",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 3030,
+                    "name": "var book = new Book();",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 3016,
+            "name": "Which of the following function of Boolean object returns a string containing the source of the Boolean object?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 1055,
+                    "questionId": 3030,
+                    "name": " toSource()",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1056,
+                    "questionId": 3030,
+                    "name": "valueOf()",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 3030,
+                    "name": "toString()",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 3030,
+                    "name": "None of the above",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 3017,
+            "name": "Which of the following function of Array object creates a new array with all of the elements of this array for which the provided filtering function returns true?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 1055,
+                    "questionId": 3030,
+                    "name": "concat()",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 3030,
+                    "name": "every()",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 3030,
+                    "name": "filter()",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 3030,
+                    "name": "some()",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 3018,
+            "name": "Which one of the following also known as Conditional Expression:",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 1055,
+                    "questionId": 3030,
+                    "name": "Alternative to if-else",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 3030,
+                    "name": "Switch statement",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 3030,
+                    "name": "If-then-else statement",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 3030,
+                    "name": "immediate if",
+                    "isAnswer": true
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 3019,
+            "name": "Which of the following type of a variable is volatile?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 1055,
+                    "questionId": 3030,
+                    "name": "Mutable variable.",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1056,
+                    "questionId": 3030,
+                    "name": "Dynamic variable.",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 3030,
+                    "name": "Volatile variable.",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 3030,
+                    "name": "Immutable variable.",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        }
+    ]
+} 
