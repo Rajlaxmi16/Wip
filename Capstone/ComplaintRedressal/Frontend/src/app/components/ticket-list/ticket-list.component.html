@@ -1,0 +1,62 @@
+<div class="container">
+    <h2 class="text-center">List of Tickets</h2>
+    <table class="table table-success table-striped">
+
+        <thead>
+            <tr>
+             <th>Customer Id</th>
+             <th>ticket Id</th>
+             <th>Customer Name</th>
+             <th>Service Type</th>
+             <th>Issue type</th>
+             <th>Address</th>
+             <th>Pincode</th>
+             <th>Status</th>
+             <th>Assigned to</th>
+             <th>Actions</th>
+            </tr>
+        </thead>
+         <tbody>
+             <tr *ngFor="let ticket of tickets">
+                 <td>
+                     {{ticket.customer.id}}
+                 </td>
+                 <td>
+                     {{ticket.id}}
+                 </td>
+                 <td>
+                     {{ticket.customer.user.fullName}}
+                 </td>
+                 <td>
+                    {{ticket.serviceType}}
+                </td>
+                 <td>
+                     {{ticket.issueType}}
+                 </td>
+                 
+                 <td>
+                     {{ticket.address}}
+                 </td>
+                 <td>
+                     {{ticket.zipcode}}
+                 </td>
+                 <td>
+                     {{ticket.status}}
+                 </td>
+                 <td *ngIf="ticket.engineer!=null">
+                     {{ticket.engineer.user.fullName}}
+                 </td>
+                 <td class="text-center" *ngIf="ticket.engineer==null">
+                    -
+                </td>
+                 <td>
+                     <a class="btn btn-sm btn-info" [routerLink]="['/viewTicket',ticket.id]">View</a>&nbsp;
+                     <a *ngIf="loggedInUser.role=='manager'" class="btn btn-sm btn-info" [routerLink]="[ '/assign-engineer', routeParam ]">Assign</a>
+                     <a *ngIf="loggedInUser.role=='customer'&&(ticket.status=='RESOLVED')||(ticket.status=='ESCALATED')" class="btn btn-sm btn-info" [routerLink]="[ '/feedback', ticket.id ]">Give Feedback</a>
+                 </td>
+             </tr>
+         </tbody>
+     </table>
+</div>
+
+

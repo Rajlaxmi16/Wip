@@ -1,0 +1,145 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+             
+        <h1 *ngIf="ticket==null">New Complaint</h1>
+        <h1 *ngIf="ticket!=null">Ticket# {{ticket.id}}</h1>
+        
+        <div *ngIf="feedback!=null">
+          <h3>Feedback</h3>
+          <div class="feedback"  style="border: 2 solid;">
+            
+            <p><b>Submitted On:</b> {{feedback.createdOn}}</p>
+           
+            <p><b>Rating:</b> {{feedback.rating}}</p>
+           
+            <p><b>Comments:</b> {{feedback.comments}}</p>
+          </div>
+        </div>
+       
+        <form [formGroup]="complaintForm" (ngSubmit)="submitHandle()" class="row g-3">
+          <div formGroupName="ticket">
+            <input type="hidden" formControlName='id'>
+          <div formGroupName="customer">
+            <input type="hidden" formControlName='id'>
+            <div class="form-group" formGroupName="user">
+            <label class="control-lable" for="fullName">
+                Full Name*
+            </label>
+            <input id="fullName" formControlName="fullName" class="form-control" required="required" autofocus="autofocus">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-lable" for="mobile">
+              Mobile*
+          </label>
+          <input id="mobile" formControlName="mobile" class="form-control" required="required" autofocus="autofocus">
+        </div>
+        <div class="form-group">
+          <label for="serviceType" class="control-label">
+            Service Type*
+          </label>
+          <select id="serviceType" formControlName="serviceType" class="form-select">
+            <option *ngFor="let service of loggedInCustomer.serviceType" [ngValue]='service'>
+                {{service}}
+            </option>
+      <!-- In edit mode service type will not be auto populated so manually doing it -->
+             <option *ngIf="serviceType.length>1" value="{{serviceType}}">{{serviceType}}</option>
+            
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="issueType" class="control-label">
+            Issue Type*
+          </label>
+          <select id="issueType" class="form-select" formControlName="issueType">
+            <option value="Cannot make calls">Cannot make calls</option>
+            <option value="Cannot receive calls">Cannot receive calls</option>
+            <option value="Cannot make/receive calls">Cannot make/receive calls</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="control-lable" for="description">
+             Detailed Description*
+          </label>
+          <textarea id="description" formControlName="description" class="form-control" cols="30" rows="5"></textarea>
+          
+        </div>
+        <div class="form-group">
+          <label class="control-lable" for="address">
+              Address*
+          </label>
+          <input id="address" formControlName="address" class="form-control" required="required" autofocus="autofocus">
+        </div>
+        <div class="form-group">
+          <label class="control-lable" for="zipcode">
+            Zipcode*
+          </label>
+          <input id="zipcode" formControlName="zipcode" class="form-control" required="required" autofocus="autofocus">
+        </div>
+        <div *ngIf="loggedInUser.role=='manager'" formGroupName='engineer'>
+          <div class="form-group">
+            <label for="">Assign To</label>
+            <select formControlName="id" class="form-select">
+              <option *ngFor="let engineer of engineers" [ngValue]="engineer.id">
+                {{engineer.user.email}}
+              </option>
+             
+            </select>
+            <!-- <input type="text" (keyup)="getAutoComplList($event)" class="form-control" id='dynamicEngineerIds'  list="dynamicEngineerIds" />
+            <datalist id="dynamicEngineerIds">
+              <option *ngFor="let engineer of engineers" [value]="engineer.user.email">{{engineer.user.fullName}}</option>
+            </datalist> -->
+          </div>
+        </div>
+       
+        <div *ngIf="ticket!=null" class="form-grop">
+          <label for="status">Status</label>
+          <select id="status" class="form-select" formControlName="status">
+            <option value="RAISED">RAISED</option>
+            <option value="WIP">WIP</option>
+            <option value="RESOLVED">RESOLVED</option>
+            <option value="ESCALATED">ESCALATED</option>
+          </select>
+        </div>
+  </div>
+ <!-- Displaying notes -->
+  <div class="work-notes" *ngFor="let note of notes" style="border: 2 solid;">
+    <p><b>Comments</b></p>
+    <p><b>Updated On:</b> {{note.createdOn}}</p>
+   
+    <p><b>Updated By:</b> {{note.updatedBy}}</p>
+   
+    <p><b>Comments:</b> {{note.comments}}</p>
+  </div>
+ 
+
+   <!-- Form Group Notes -->
+  <div *ngIf="feedback==null" formGroupName='notes'>
+    <div *ngIf="ticket!=null" class="form-group">
+      <label class="control-lable" for="notes">
+         Add Comments
+      </label>
+      <textarea id="notes" formControlName="comments" class="form-control" cols="30" rows="5"></textarea>
+      
+    </div>
+   </div>
+   <div *ngIf="feedback==null" class="form-group">
+    <div class="col-md-4 offset-md-2">
+    <div class="row">
+      <div class="col">
+        <button class="btn btn-dark">Submit</button>
+      </div>
+      <div class="col">
+        <button type="submit" class="btn btn-dark">Cancel</button>
+      </div>
+    </div>   
+</div>
+</div>
+        </form>
+      </div>
+  
+    </div>
+  
+  </div>

@@ -1,0 +1,60 @@
+
+    <nav *ngIf="loggedInUser!=null" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">ABC Telecom Ltd.</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse1">
+                <div class="navbar-nav">
+                    <a routerLink="/home" class="nav-item nav-link" routerLinkActive="active-link">Home</a>
+                   
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Tickets</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" [routerLink]="['/ticket-list']" >All Tickets</a></li>
+                        <div *ngIf="loggedInUser.role=='customer'">
+                          <li><hr class="dropdown-divider"></li>
+                           <li >
+                          <a class="dropdown-item" routerLink="/ticket">Create New</a>
+                          </li>
+                        </div>
+                        
+                      </ul>
+                    </li>
+                    <div *ngIf="loggedInUser.role!='customer'">
+                      <li  class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Users</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" [routerLink]="['/users','customer']" >Customers</a></li>
+                          <li><a class="dropdown-item" [routerLink]="['/users','engineer']">Engineers</a></li>
+                          <li><a class="dropdown-item" [routerLink]="['/users','manager']">Managers</a></li>
+                          <div *ngIf="loggedInUser.role=='admin'">
+                          <li><hr class="dropdown-divider"></li>
+                          <li ><a class="dropdown-item" routerLink="/create">New User</a></li>
+                        </div>
+                        </ul>
+                      </li>
+                    </div>
+                    
+                    <!-- <a routerLink="/create" class="nav-item nav-link">Users</a> -->
+                    <a routerLink="/logout" class="nav-item nav-link">Logout</a>
+                     <div class="profile">
+                  
+                </div>
+                </div>
+                
+                <!-- <form class="d-flex ms-auto">
+                    <input type="text" class="form-control me-sm-2" placeholder="Search">
+                    <button type="submit" class="btn btn-outline-light">Search</button>
+                </form> -->
+            </div>
+            <div class="profile-icon">
+              <h4 class="profile-name">{{loggedInUser.fullName}}</h4>
+              <svg width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" id="Stock_cut" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><desc/><g><circle cx="16" cy="16" fill="none"  r="15" stroke="#c9c8c7" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><path d="M26,27L26,27   c0-5.523-4.477-10-10-10h0c-5.523,0-10,4.477-10,10v0" fill="none" stroke="#c9c8c7" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><circle cx="16" cy="11" fill="none" r="6" stroke="#c9c8c7" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/></g></svg>
+            
+            </div>
+        </div>
+    </nav>
+
+  

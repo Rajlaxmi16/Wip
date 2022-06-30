@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+.work-notes{
+    border-left: 6px solid rgb(0, 255, 98);
+    background-color: rgba(211, 211, 211, 0.678);
+    border-radius: 8px;
+}
+
+.feedback{
+    border-left: 6px solid rgb(255, 153, 0);
+    background-color: rgba(10, 199, 67, 0.678);
+    border-radius: 8px;
+}
+
+.profile-icon{
+    margin-right: 20px;
+    display: flex;
+}
+
+.profile-name{
+    margin-right: 10px;
+    color: white;
+}

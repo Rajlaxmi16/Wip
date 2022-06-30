@@ -1,0 +1,135 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+             
+        <h1>{{formHeading}}</h1>
+        
+        <form [formGroup]="userForm" (ngSubmit)="submitHandle()" class="row g-3">
+          <div formGroupName="user">
+            <input type="hidden" formControlName='id'>
+          <div class="form-group">
+            <label class="control-lable" for="fullName">
+                Full Name*
+            </label>
+            <input id="fullName" formControlName="fullName" class="form-control" >
+          </div>
+        <div class="form-group">
+          <label class="control-lable" for="phone">
+              phone*
+          </label>
+          <input id="phone" formControlName="phone" class="form-control"   >
+        </div>
+        <div class="form-group">
+          <label class="control-lable" for="email">
+            email*
+          </label>
+          <input id="email" formControlName="email" class="form-control" >
+        </div>
+        <div class="form-group">
+          <label class="control-lable" for="password">
+            password*
+          </label>
+          <input type="password" id="password" formControlName="password" class="form-control" >
+        </div>
+        <div class="form-group">
+          <label for="role" class="control-label">
+           Role*
+          </label>
+          <select id="role" formControlName="role"  (change)="roleHandler()" class="form-select">
+            <option value="customer">Customer</option>
+            <option value="engineer">Engineer</option>
+            <option value="manager">Manager</option>
+          </select>
+        </div>
+        </div>
+        <!-- Form for customer -->
+        <!-- *************** -->
+        <div *ngIf="role=='customer'">
+          <div formGroupName="customer">
+            <input type="hidden" formControlName='id'>
+          <div class="form-group">
+            <label class="control-lable" for="address">
+                Address*
+            </label>
+            <input id="address" formControlName="address" class="form-control"  >
+          </div>
+          <div class="form-group">
+            <label class="control-lable" for="zipcode">
+              Zipcode*
+            </label>
+           
+           <select formControlName='zipcode' id="zipcode"  class="form-select">
+              <option *ngFor="let zipcode of zipcodes" [ngValue]="zipcode">{{zipcode}}</option>
+           </select>
+          </div>
+          <div class="form-group">
+            <label class="control-lable" for="address">
+              Service Type*
+            </label>
+            <ng-multiselect-dropdown formControlName="serviceType"
+              [placeholder]="'service type'"
+              [settings]="dropdownSettings"
+              [data]="serviceList"
+              
+              (onSelect)="onItemSelect($event)"
+              (onSelectAll)="onSelectAll($event)"
+          >
+          </ng-multiselect-dropdown>
+        </div>
+        </div>
+        </div>
+        <!-- Form for engineer -->
+         <!-- *************** -->
+        <div *ngIf="role=='engineer'">
+          <div formGroupName="engineer">
+            <input type="hidden" formControlName='id'>
+            <div class="form-group">
+              <label class="control-lable" for="zipcode">
+                Zipcode*
+              </label>
+              <select formControlName='zipcode' id="zipcode"  class="form-select">
+                <option *ngFor="let zipcode of zipcodes" [ngValue]="zipcode">{{zipcode}}</option>
+             </select>
+            </div>
+          </div>
+        </div>
+        <!-- Form for Manager -->
+        <!-- *************** -->
+        <div *ngIf="role=='manager'">
+          <div formGroupName="manager">
+            <input type="hidden" formControlName='id'>
+            <div class="form-group">
+              <label class="control-lable" >
+                Zipcodes Assigned*
+              </label>
+              <ng-multiselect-dropdown formControlName="zipcode"
+                [placeholder]="'zipcode'"
+                [settings]="dropdownSettings"
+                [data]="zipcodeList"
+                
+                (onSelect)="onItemSelect($event)"
+                (onSelectAll)="onSelectAll($event)"
+            >
+            </ng-multiselect-dropdown>
+          </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-md-4 offset-md-2">
+          <div class="row">
+            <div class="col">
+              <button class="btn btn-dark">Submit</button>
+            </div>
+            <div class="col">
+              <button type="submit" class="btn btn-dark">Cancel</button>
+            </div>
+          </div>   
+      </div>
+    </div>
+  
+        </form>
+      </div>
+  
+    </div>
+  
+  </div>

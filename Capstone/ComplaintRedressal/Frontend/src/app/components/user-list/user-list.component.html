@@ -1,0 +1,146 @@
+
+<div class="container">
+    <!-- List of Customers -->
+    <!-- ****************** -->
+    <div *ngIf="role=='customer'">
+        <h2 class="text-center">List of Customers</h2>
+    <table class="table table-success table-striped">
+
+       <thead>
+           <tr>
+            <th>User Id</th>
+            <th>Customer Id</th>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Address</th>
+            <th>Services</th>
+            <th>Pincode</th>
+            <th>Actions</th>
+           </tr>
+       </thead>
+        <tbody>
+            <tr *ngFor="let customer of customers">
+                <td>
+                    {{customer.user.id}}
+                </td>
+                <td>
+                    {{customer.id}}
+                </td>
+                <td>
+                    {{customer.user.fullName}}
+                </td>
+                <td>
+                    {{customer.user.email}}
+                </td>
+                <td>
+                    {{customer.user.role}}
+                </td>
+                <td>
+                    {{customer.address}}
+                </td>
+                <td>
+                    {{customer.serviceType}}
+                </td>
+                <td>
+                    {{customer.zipcode}}
+                </td>
+                <td>
+                    <a class="btn btn-sm btn-info" [routerLink]="['/editUser',customer.id,customer.user.role]">Edit</a>&nbsp;
+                    <button class="btn btn-sm btn-danger" (click)="deleteUser(customer.id,customer.user.role)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <!-- List for Engineers -->
+     <!-- ****************** -->
+     <div *ngIf="role=='engineer'">
+        <h2 class="text-center">List of Engineers</h2>
+    <table class="table table-success table-striped">
+
+       <thead>
+           <tr>
+            <th>User Id</th>
+            <th>Engineer Id</th>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Pincode</th>
+            <th>Actions</th>
+           </tr>
+       </thead>
+        <tbody>
+            <tr *ngFor="let engineer of engineers">
+                <td>
+                    {{engineer.user.id}}
+                </td>
+                <td>
+                    {{engineer.id}}
+                </td>
+                <td>
+                    {{engineer.user.fullName}}
+                </td>
+                <td>
+                    {{engineer.user.email}}
+                </td>
+                <td>
+                    {{engineer.user.role}}
+                </td>
+                <td>
+                    {{engineer.zipcode}}
+                </td>
+                <td>
+                    <a class="btn btn-sm btn-info" [routerLink]="['/editUser',engineer.id,engineer.user.role]">Edit</a>&nbsp;
+                    <button class="btn btn-sm btn-danger" (click)="deleteUser(engineer.id,engineer.user.role)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <!-- List for Managers -->
+     <!-- ****************** -->
+     <div *ngIf="role=='manager'">
+        <h2 class="text-center">List of Managers</h2>
+    <table class="table table-success table-striped">
+
+       <thead>
+           <tr>
+            <th>User Id</th>
+            <th>Manager Id</th>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Pincodes</th>
+            <th>Actions</th>
+           </tr>
+       </thead>
+        <tbody>
+            <tr *ngFor="let manager of managers">
+                <td>
+                    {{manager.user.id}}
+                </td>
+                <td>
+                    {{manager.id}}
+                </td>
+                <td>
+                    {{manager.user.fullName}}
+                </td>
+                <td>
+                    {{manager.user.email}}
+                </td>
+                <td>
+                    {{manager.user.role}}
+                </td>
+                <td>
+                    {{manager.zipcode}}
+                </td>
+                <td>
+                    <a class="btn btn-sm btn-info" [routerLink]="['/editUser',manager.id,manager.user.role]">Edit</a> &nbsp;
+                    <button class="btn btn-sm btn-danger" (click)="deleteUser(engineer.id,engineer.user.role)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+</div>
